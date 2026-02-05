@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VELVET — Luxury Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">VELVET</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li class="cart">🛒 <span id="cart-count">0</span></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Crafted for Taste.</h1>
+        <p>Luxury fashion curated for modern minimalists.</p>
+    </div>
+</section>
+
+<section class="products">
+    <div class="card">
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
+        </div>
+        <h3>Leather Watch</h3>
+        <p>₹2499</p>
+        <button onclick="addToCart(2499)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+        </div>
+        <h3>Luxury Shoes</h3>
+        <p>₹4999</p>
+        <button onclick="addToCart(4999)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
+        </div>
+        <h3>Designer Jacket</h3>
+        <p>₹7999</p>
+        <button onclick="addToCart(7999)">Add to Cart</button>
+    </div>
+</section>
+
+<div class="total">
+    Total Amount — ₹ <span id="total-price">0</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
